@@ -1,0 +1,85 @@
+<html>
+<head>
+    <meta charset="Utf-8">
+    <link rel="stylesheet" href="css/Untitled-1.css">
+    <script src="./javascript/Untitled-2.js" defer ></script>
+    <title>Yasmin Carmona</title>
+    <style>
+        *{margin:0;padding: 0;box-sizing: border-box;}
+
+        body { 
+        background-color: rgb(91, 120, 130);
+        }
+
+        form { 
+        align-items: center;
+        background-color: aliceblue;
+        max-width: 500px;
+        width: 70%;
+        padding: 20px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        }
+
+        form h3 {
+            text-align: center;
+            color:rgb(86, 133, 132);
+        }
+
+        form input[type= text],
+        form input[type= password]{
+            width:100%;
+            height:45px;
+            border:1px solid #ccc;
+            padding-left:10px;
+            margin: 10px;
+        }
+
+        form input[type= submit]{
+            width: 100%;
+            height: 40px;
+            cursor: pointer;
+            background:rgb(91, 120, 130);
+            color: white;
+            border: 0;
+            border-radius: 20px;
+            transition: 1s;
+        }
+        
+        form input[type= submit]:hover{
+            background-color: rgb(73, 95, 102);
+        }
+        form input[type=text]:focus{
+            outline: 0px;
+        }
+        form input[type=password]:focus {
+            outline: 0px;
+        }
+    </style>
+
+    <body>
+        <div class=" dados ">
+            <br>
+            <div class="title"> <P align = center> <b><i> Formulário cadastro </i></b></P> </div>
+            <br>
+             <hr>
+        <form> 
+            <h3>Entre em contato</h3>
+            <input id="email" type="text" name="E-mail" placeholder="Seu e-mail...">
+            <input type="text" name="Senha" placeholder="Sua senha...">
+            <input type="submit" nome="acao" value="Enviar">
+        </form>
+        <script>
+            var email = document.getElementById('email');
+            email.addEventListener('focus',()=>{
+            email.style.borderColor = rgb(73, 95, 102);
+        })
+        </script>
+        </div>
+    </body>
+
+</head>
+</html>
+
